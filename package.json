@@ -5,6 +5,7 @@
   "dependencies": {
     "@expo/ui": "~58.0.27",
     "expo": "~58.0.23",
+    "expo-clipboard": "~58.0.4",
     "expo-constants": "~58.0.15",
     "expo-device": "~58.0.5",
     "expo-font": "~58.0.11",
@@ -12,6 +13,7 @@
     "expo-image": "~58.0.18",
     "expo-linking": "~58.0.16",
     "expo-router": "~58.0.30",
+    "expo-secure-store": "~58.0.2",
     "expo-splash-screen": "~58.0.13",
     "expo-status-bar": "~58.0.4",
     "expo-symbols": "~58.0.4",
@@ -29,6 +31,8 @@
   },
   "devDependencies": {
     "@types/react": "~19.3.0",
+    "eslint": "^9.0.0",
+    "eslint-config-expo": "~58.0.4",
     "typescript": "~6.0.3"
   },
   "scripts": {
@@ -37,7 +41,10 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "lint": "expo lint"
+    "lint": "expo lint",
+    "ios:native": "expo run:ios",
+    "android:native": "expo run:android",
+    "typecheck": "tsc --noEmit"
   },
   "private": true
 }

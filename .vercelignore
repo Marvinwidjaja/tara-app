@@ -1,0 +1,12 @@
+# Only the source is needed; Vercel installs dependencies and builds.
+node_modules/
+.expo/
+dist/
+web-build/
+ios/
+android/
+.DS_Store
+.env
+.env.local
+.env*.local
+.claude/
